@@ -1,25 +1,8 @@
-# Hello
-
-```mermaid
-
-Identification
----------------------------------------------------
-Records identified through database searching (n = 1,236)
-Additional records identified through other sources (n = 0)
----------------------------------------------------
-Screening
----------------------------------------------------
-Records after duplicates removed (n = 1,236)
-Records screened (n = 1,236)
-Records excluded (n = 924)
----------------------------------------------------
-Eligibility
----------------------------------------------------
-Full-text articles assessed for eligibility (n = 312)
-Full-text articles excluded (n = 226)
----------------------------------------------------
-Included
----------------------------------------------------
-Studies included in qualitative synthesis (n = 86)
-
-```
+flowchart TD
+    A[Records identified through database searching<br>(n = 1,236)] --> B[Additional records identified through other sources<br>(n = 0)]
+    B --> C[Records after duplicates removed<br>(n = 1,236)]
+    C --> D[Records screened<br>(n = 1,236)]
+    D --> E[Records excluded<br>(n = 924)]
+    D --> F[Full-text articles assessed for eligibility<br>(n = 312)]
+    F --> G[Full-text articles excluded<br>(n = 226)]
+    F --> H[Studies included in qualitative synthesis<br>(n = 86)]
