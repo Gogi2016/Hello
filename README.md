@@ -1,6 +1,3 @@
-flowchart TB
-
-```mermaid
 flowchart TD
     %% Identification
     ID1[Records identified through database searching (n = 1,236)]
@@ -18,6 +15,3 @@ flowchart TD
 
     %% Included
     E1 --> I1[Studies included in qualitative synthesis (n = 86)]
-
-
-```
