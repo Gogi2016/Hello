@@ -1,4 +1,6 @@
 flowchart TB
+
+```mermaid
     %% Identification
     A[Records identified through database searching<br>(n = 1,236)]
     B[Additional records identified through other sources<br>(n = 0)]
@@ -19,3 +21,4 @@ flowchart TB
     %% Styling for side-by-side alignment
     classDef side fill:#f9f9f9,stroke:#333,stroke-width:1px;
     class A,B,C,D,E,F,G,H side;
+```
