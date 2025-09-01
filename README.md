@@ -1,24 +1,22 @@
 flowchart TB
 
 ```mermaid
+   flowchart TD
     %% Identification
-    A[Records identified through database searching<br>(n = 1,236)]
-    B[Additional records identified through other sources<br>(n = 0)]
-    A --> C[Records after duplicates removed<br>(n = 1,236)]
-    B --> C
+    ID1[Records identified through database searching<br>(n = 1,236)]
+    ID2[Additional records identified through other sources<br>(n = 0)]
+    ID1 --> R1[Records after duplicates removed<br>(n = 1,236)]
+    ID2 --> R1
 
     %% Screening
-    C --> D[Records screened<br>(n = 1,236)]
-    D --> E[Records excluded<br>(n = 924)]
-    D --> F[Full-text articles assessed for eligibility<br>(n = 312)]
+    R1 --> S1[Records screened (titles & abstracts)<br>(n = 1,236)]
+    S1 --> S2[Records excluded<br>(n = 924)]
 
     %% Eligibility
-    F --> G[Full-text articles excluded<br>(n = 226)]
+    S1 --> E1[Full-text articles assessed for eligibility<br>(n = 312)]
+    E1 --> E2[Full-text articles excluded<br>(n = 226)]
 
     %% Included
-    F --> H[Studies included in qualitative synthesis<br>(n = 86)]
+    E1 --> I1[Studies included in qualitative synthesis<br>(n = 86)]
 
-    %% Styling for side-by-side alignment
-    classDef side fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    class A,B,C,D,E,F,G,H side;
 ```
